@@ -296,6 +296,6 @@ jupyter notebook notebooks/UK_Online_Retail_Analysis.ipynb
 ## About
 
 **Alwyn Fernandus**
-MBA in Business Analytics | Available immediately (F-1 OPT)
+MBA in Business Analytics 
 Power BI · SQL · Python · Excel · Tableau · Alteryx · GitHub
 📧 alwynfernandus123@gmail.com · [LinkedIn](https://www.linkedin.com/in/alwynfernandus)
