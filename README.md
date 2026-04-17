@@ -1,4 +1,4 @@
-# UK Online Retail — Business Analysis
+# UK Online Retail - Business Analysis
 
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white" />
@@ -9,7 +9,7 @@
 
 ---
 
-A full business analysis of a UK-based online gift retailer — 13 months of real transaction data, from raw Excel to strategic recommendations.
+A full business analysis of a UK-based online gift retailer - 13 months of real transaction data, from raw Excel to strategic recommendations.
 
 **Dataset:** [UCI Online Retail](https://archive.ics.uci.edu/dataset/352/online+retail) · 541,909 transactions · Dec 2010 – Dec 2011
 
@@ -20,7 +20,7 @@ A full business analysis of a UK-based online gift retailer — 13 months of rea
 The company had transactional data but no real visibility into what was driving it. A few questions kept coming up without clear answers:
 
 - Which customers were likely to stop buying, and were there signals in the data?
-- Revenue looked healthy overall — but how concentrated was it, really?
+- Revenue looked healthy overall - but how concentrated was it, really?
 - Were there international markets generating revenue without any marketing behind them?
 - Was the marketing budget being spent at the right times?
 
@@ -32,7 +32,7 @@ This project works through each of those questions using the actual transaction 
 
 Cleaned and explored 541K rows of invoice data, built an RFM segmentation model across 4,334 customers, ran cohort retention analysis, and translated the findings into prioritised recommendations.
 
-The cleaning removed ~145K rows for valid reasons — anonymous sessions with no CustomerID, cancellation invoices, a handful of internal test codes, and a small number of negative quantities. Each decision is documented in the notebook.
+The cleaning removed ~145K rows for valid reasons - anonymous sessions with no CustomerID, cancellation invoices, a handful of internal test codes, and a small number of negative quantities. Each decision is documented in the notebook.
 
 **Workflow:**
 ```
@@ -60,22 +60,22 @@ Raw data → Cleaning & validation → Feature engineering
 ## What the Data Showed
 
 **Revenue is heavily Q4-dependent.**
-November alone was 13% of the full year. That's not unusual for a gift retailer, but the business had no early planning mechanism around it. A bad November — supply issue, a slow start to the season, whatever — would hit the annual number hard.
+November alone was 13% of the full year. That's not unusual for a gift retailer, but the business had no early planning mechanism around it. A bad November - supply issue, a slow start to the season, whatever - would hit the annual number hard.
 
 **A small group of customers is carrying the business.**
-The Champions segment — customers with high recency, frequency, and spend — generated over 55% of total revenue. That's roughly 800 customers out of 4,334. There was no loyalty program, no dedicated communication strategy, nothing specifically designed to keep them.
+The Champions segment - customers with high recency, frequency, and spend - generated over 55% of total revenue. That's roughly 800 customers out of 4,334. There was no loyalty program, no dedicated communication strategy, nothing specifically designed to keep them.
 
 **35% of customers never came back.**
-About 1 in 3 customers bought once and disappeared. The data doesn't explain why, but the pattern is consistent across cohorts. Something in the post-purchase experience — follow-up, product quality, communication — isn't converting first-time buyers into repeat ones.
+About 1 in 3 customers bought once and disappeared. The data doesn't explain why, but the pattern is consistent across cohorts. Something in the post-purchase experience - follow-up, product quality, communication - isn't converting first-time buyers into repeat ones.
 
 **There's nearly £1M sitting in an At-Risk segment.**
-449 customers who used to buy regularly have gone quiet. Their combined historical spend is £931K. These aren't cold leads — they already spent money here. A basic re-engagement effort targeting even 15% of them would recover around £140K.
+449 customers who used to buy regularly have gone quiet. Their combined historical spend is £931K. These aren't cold leads - they already spent money here. A basic re-engagement effort targeting even 15% of them would recover around £140K.
 
 **Germany and Netherlands are buying without any marketing.**
-82.9% of revenue came from the UK. But Germany, Netherlands, and Ireland were consistently in the top international markets — buying without any targeted campaigns behind them. That suggests a real opportunity if the business actually invested there.
+82.9% of revenue came from the UK. But Germany, Netherlands, and Ireland were consistently in the top international markets - buying without any targeted campaigns behind them. That suggests a real opportunity if the business actually invested there.
 
 **Nobody is ordering on weekends.**
-Saturday and Sunday order volumes were noticeably lower than any weekday. Most orders happened Tuesday to Thursday, between 10am and 2pm. This points to a largely B2B/wholesale buyer profile — people ordering for their shops during work hours. Spending on weekend digital ads for this audience is probably wasted.
+Saturday and Sunday order volumes were noticeably lower than any weekday. Most orders happened Tuesday to Thursday, between 10am and 2pm. This points to a largely B2B/wholesale buyer profile - people ordering for their shops during work hours. Spending on weekend digital ads for this audience is probably wasted.
 
 ---
 
@@ -85,18 +85,18 @@ Saturday and Sunday order volumes were noticeably lower than any weekday. Most o
 
 | Action | Who It Targets | Why |
 |--------|---------------|-----|
-| Simple loyalty program — early access, thank-you discount | Champions | Protect the 55% of revenue they generate |
+| Simple loyalty program - early access, thank-you discount | Champions | Protect the 55% of revenue they generate |
 | 3-email re-engagement sequence | At-Risk | £140K recoverable at 15% conversion |
 | Move paid ad schedule to Tue–Thu 10am–2pm | All channels | Better alignment with actual buyer windows |
 | Day 7 + Day 30 follow-up emails for new customers | First-time buyers | Tackle the 35% one-time buyer rate |
 
 **Over the next 3–9 months**
-- Connect RFM scoring to the CRM so segment drops trigger automatically — no analyst needed each time
+- Connect RFM scoring to the CRM so segment drops trigger automatically - no analyst needed each time
 - Start Q4 planning in August, not October. Pre-Black Friday emails by October 15 at the latest
-- Bundle the top products together — AOV is £476, and there's room to push that higher
+- Bundle the top products together - AOV is £476, and there's room to push that higher
 
 **Longer term**
-- Run targeted campaigns in Germany, Netherlands, and France — they're already converting organically
+- Run targeted campaigns in Germany, Netherlands, and France - they're already converting organically
 - Build a wholesale tier for the B2B buyers who dominate weekday ordering
 - A basic seasonal forecasting model would help with November inventory planning
 
@@ -116,7 +116,7 @@ Saturday and Sunday order volumes were noticeably lower than any weekday. Most o
 ### Order Volume by Day & Hour
 ![Day Hour](visuals/04_orders_day_hour.png)
 
-### RFM Segments — Customer Count & Revenue
+### RFM Segments - Customer Count & Revenue
 ![RFM](visuals/05_rfm_segments.png)
 
 ### Recency vs. Customer Value
@@ -135,14 +135,14 @@ Saturday and Sunday order volumes were noticeably lower than any weekday. Most o
 
 ## Skills Demonstrated
 
-- **Data cleaning & preparation** — Handled 24.9% missing rate, documented every removal decision
-- **KPI definition** — Built a baseline metric framework before touching the EDA
-- **Customer segmentation** — RFM model across 4,334 customers, scored and labelled into 6 segments
-- **Cohort analysis** — Tracked 13 acquisition cohorts across a 6-month retention window
-- **Exploratory data analysis** — Revenue trends, product concentration, geographic breakdown, behavioural patterns
-- **Data visualisation** — 9 charts with consistent design, business-annotated, output-ready
-- **Business recommendations** — Findings translated into actions with target owners and expected outcomes
-- **Python** — pandas, matplotlib, seaborn, scikit-learn — end to end
+- **Data cleaning & preparation** - Handled 24.9% missing rate, documented every removal decision
+- **KPI definition** - Built a baseline metric framework before touching the EDA
+- **Customer segmentation** - RFM model across 4,334 customers, scored and labelled into 6 segments
+- **Cohort analysis** - Tracked 13 acquisition cohorts across a 6-month retention window
+- **Exploratory data analysis** - Revenue trends, product concentration, geographic breakdown, behavioural patterns
+- **Data visualisation** - 9 charts with consistent design, business-annotated, output-ready
+- **Business recommendations** - Findings translated into actions with target owners and expected outcomes
+- **Python** - pandas, matplotlib, seaborn, scikit-learn - end to end
 
 ---
 
@@ -192,6 +192,6 @@ jupyter notebook notebooks/UK_Online_Retail_Analysis.ipynb
 
 ## About
 
-**Alwyn Fernandus** — MBA in Business Analytics, available immediately (F-1 OPT)  
+**Alwyn Fernandus** - MBA in Business Analytics - Utica University  
 Power BI · SQL · Python · Excel · Tableau · Alteryx  
 alwynfernandus123@gmail.com · [LinkedIn](https://www.linkedin.com/in/alwynfernandus)
