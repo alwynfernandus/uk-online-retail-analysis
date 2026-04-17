@@ -192,13 +192,6 @@ jupyter notebook notebooks/UK_Online_Retail_Analysis.ipynb
 
 ## About
 
-<<<<<<< Updated upstream
-**Alwyn Fernandus**
-MBA in Business Analytics 
-Power BI · SQL · Python · Excel · Tableau · Alteryx · GitHub
-📧 alwynfernandus123@gmail.com · [LinkedIn](https://www.linkedin.com/in/alwynfernandus)
-=======
 **Alwyn Fernandus** — MBA in Business Analytics, available immediately (F-1 OPT)  
 Power BI · SQL · Python · Excel · Tableau · Alteryx  
 alwynfernandus123@gmail.com · [LinkedIn](https://www.linkedin.com/in/alwynfernandus)
->>>>>>> Stashed changes
